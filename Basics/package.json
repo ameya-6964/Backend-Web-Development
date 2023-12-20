@@ -4,6 +4,7 @@
   "description": "My First Application",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -11,5 +12,8 @@
     "app"
   ],
   "author": "Ameya Belvalkar",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "casual": "^1.6.2"
+  }
 }
