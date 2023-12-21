@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/design.css" />
+    <title>EJS Loops</title>
+  </head>
+  <body>
+    <h1>Stack OverFlow Questions</h1>
+    <% questions.forEach((question)=> { %>
+    <h2><%= question['title'] %></h2>
+    <p><%= question['user'] %></p>
+    <p><%= question['votes'] %></p>
+    <% }); %>
+  </body>
+</html>
