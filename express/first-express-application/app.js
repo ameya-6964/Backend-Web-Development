@@ -17,6 +17,13 @@ app.get("/about", (req, res) => {
   res.send(`<h1>About Us Page</h1>`);
 });
 
+//! NOTE :- Error Page Should Be At Last Order
+app.get("*", (req, res) => {
+  res.send(
+    `<h1 style="color:red">Error Invalid URL</h1> <a href="/">Go To Home Page</a>`
+  );
+});
+
 app.listen(port, () => {
   console.log(`Server Started On Port ${port}`);
 });
