@@ -14,6 +14,11 @@ app.get("/questions", (req, res) => {
       votes: "10",
     },
     {
+      title: "What is Mongo.db",
+      user: "Ameya",
+      votes: "5",
+    },
+    {
       title: "What is Express.js",
       user: "John",
       votes: "8",

@@ -8,10 +8,17 @@
   </head>
   <body>
     <h1>Stack OverFlow Questions</h1>
-    <% questions.forEach((question)=> { %>
+    <% questions.forEach((question)=> { %> <% if(question['user'].toLowerCase()
+    === 'ameya'){ %>
     <h2><%= question['title'] %></h2>
     <p><%= question['user'] %></p>
     <p><%= question['votes'] %></p>
-    <% }); %>
+    <%} else { %>
+    <h1>Asked By Other Users</h1>
+    <h2><%= question['title'] %></h2>
+    <p><%= question['user'] %></p>
+    <p><%= question['votes'] %></p>
+
+    <% }%> %> <% }); %>
   </body>
 </html>
