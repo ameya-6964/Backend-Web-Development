@@ -12,4 +12,14 @@ const divide = (a, b) => {
   return a / b;
 };
 
-module.exports = { add, divide, multiply, substract };
+//First Way Exporting Multiple Function
+const functionObj = {
+  add: add,
+  substract: substract,
+  divide: divide,
+  multiply: multiply,
+};
+module.exports = functionObj;
+
+// Second Way Of Exporting Multiple Function
+// module.exports = { add, divide, multiply, substract };
