@@ -2,10 +2,10 @@ const http = require("http");
 
 const server = http.createServer((req, res) => {
   if (req.url === "/") {
-    // Set content type to JSON
-    res.writeHead(200, { "Content-Type": "application/json" });
-    // Send JSON response
-    res.end(JSON.stringify({ message: "Request Received" }));
+    res.setHeader("Content-Type", "text/html");
+    res.write("<html><head><title>Node Server</title></head></html>");
+    res.write("<body><h1>Hello</h1></body>");
+    res.end();
   }
 });
 
